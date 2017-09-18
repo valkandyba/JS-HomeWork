@@ -1,0 +1,148 @@
+div {
+	box-sizing: border-box;
+}
+
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#header {
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.holder {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 48%;
+	margin: 0 1% 10px;
+	border: 2px solid #ff003f;
+	padding: 15px;
+}
+
+.box.controler-dev {
+	width: 100%;
+}
+
+.options-drop {
+	padding-bottom: 10px
+}
+
+label {
+	display: block;
+	cursor: pointer;
+}
+
+ul li,
+ol li {
+	padding: 7px 0;
+}
+
+.options-drop label{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 5px;
+}
+
+.options-drop label + select {
+	display: block;
+}
+
+.btn {
+	display: block;
+	outline: none;
+	border:1px solid;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background .3s;
+}
+
+.btn.primary {
+	background: #006dcc;
+	border-color: #006dcc;
+}
+
+.btn.danger {
+	background: #bd362f;
+	border-color: #bd362f;
+}
+
+.btn.success {
+	background: #5bb75b;
+	border-color: #5bb75b;
+}
+
+
+.btn:hover {
+	background: transparent;
+}
+
+.dev-holder {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 0 10px;
+}
+
+.smart-device {
+	border: 1px solid blue;
+	width: 31%;
+	margin: 0 1%;
+	padding: 15px;
+}
+
+.controler {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.select-dev {
+	width: 12%;
+	align-self" flex-start;
+}
+
+.controler-dev-holder {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap:wrap;
+	width: 80%;
+}
+
+.controler-dev-box {
+	width: 31%;
+	margin: 0 1% 10px;
+	border: 1px solid blue;
+	padding: 15px;
+}
+
+.row {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.controler-dev-box .row .field {
+	display: block;
+}
+
+.options-value {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.controler-dev-box .options-value input {
+	width: 100%;
+}

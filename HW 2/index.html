@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project</title>
+		<link media="all" rel="stylesheet" href="css/main.css">
+		<script type="text/javascript" src="js/jquery.main.js" defer></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="container">
+					<h1> Your smart house</h1>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<div class="holder">
+						<div class="box create-dev">
+							<h2>Create your device</h2>
+							<form>
+								<ol class="options-list">
+									<li>
+										<label for="inp-name">Name</label>
+										<input type="text" name="l" id="inp-name" placeholder="Enter name">
+									</li>
+									<li>
+										<label for="inp-year">Year of issue</label>
+										<input type="text" name="l" id="inp-year" placeholder="Enter name">
+									</li>
+									<li>
+										<label for="inp-lifetime">Lifetime</label>
+										<input type="text" name="l" id="inp-lifetime" placeholder="Enter name">
+									</li>
+									<li>
+										<label for="type">Select Type</label>
+										<select id="type">
+											<option>Type...</option>
+											<option>Kitchen</option>
+											<option>Common rooms</option>
+											<option>Bedroom</option>
+											<option>Outside</option>
+										</select>
+									</li>
+									<li>
+										<strong>Choose Options</strong>
+										<ul class="options-drop">
+											<li>
+												<label for="type">Switch</label>
+												<select>
+													<option>On</option>
+													<option>Off</option>
+												</select>
+											</li>
+											<li>
+												<label for="check1">
+													<input type="checkbox" id="check1">
+													<span class="fake-label">Temperature inside</span>
+													<span class="fake-input"></span>
+												</label>
+											</li>
+											<li>
+												<label for="check2">
+													<input type="checkbox" id="check2">
+													<span class="fake-label">Temperature outside</span>
+													<span class="fake-input"></span>
+												</label>
+											</li>
+											<li>
+												<label for="check3">
+													<input type="checkbox" id="check3">
+													<span class="fake-label">Time of working</span>
+													<span class="fake-input"></span>
+												</label>
+											</li>
+											<li>
+												<label for="check4">
+													<input type="checkbox" id="check4">
+													<span class="fake-label">Delayed start of operation </span>
+													<span class="fake-input"></span>
+												</label>
+											</li>
+											<li>
+												<label for="check5">
+													<input type="checkbox" id="check5">
+													<span class="fake-label">The time off </span>
+													<span class="fake-input"></span>
+												</label>
+											</li>
+										</ul>
+										<button type="button" class="add-opt btn primary">Add options</button>
+									</li>
+								</ol>
+								<button type="submit" class="btn success add-dev">Add device</button>
+							</form>
+						</div>
+						<div class="box group-dev">
+							<h2>Device your's smart home</h2>
+							<form action="">
+								<div class="dev-holder">
+									<div class="smart-device">
+										<label for="check6">
+											<input type="checkbox" id="check6">
+											<span class="fake-label"></span>
+											<span class="fake-input"></span>
+										</label>
+										<div class="row">
+											<strong class="field">Device name:</strong>
+											<span class="value"></span>
+										</div>
+										<div class="row">
+											<strong class="field">Year of issuee:</strong>
+											<span class="value"></span>
+										</div>
+										<div class="row">
+											<strong class="field">Lifetime:</strong>
+											<span class="value"></span>
+										</div>
+										<div class="row">
+											<strong class="field">Type:</strong>
+											<span class="value"></span>
+										</div>
+										<div class="row">
+											<strong class="field">Options:</strong>
+											<ul class="options-value">
+												<li>
+													<span>Temperature inside</span>
+													<span class="value"></span>
+												</li>
+												<li>
+													<span>Temperature outside</span>
+													<span class="value"></span>
+												</li>
+												<li>
+													<span>Time of working</span>
+													<span class="value"></span>
+												</li>
+												<li>
+													<span>Delayed start of operation</span>
+													<span class="value"></span>
+												</li>
+												<li>
+													<span>The time off</span>
+													<span class="value"></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="btn danger del-dev">Remove device</button>
+							</form>
+						</div>
+						<div class="box controler-dev">
+							<h2>Your controler</h2>
+							<form action="">
+								<div class="controler">
+									<div class="select-dev">
+										<label for="type">Select device</label>
+										<select>
+											<option>device 1</option>
+											<option>device 2</option>
+											<option>device 3</option>
+											<option>device 4</option>
+											<option>device 5</option>
+										</select>
+									</div>
+									<div class="controler-dev-holder">
+										<div class="controler-dev-box">
+											<div class="row">
+												<strong class="field">Device name:</strong>
+												<span class="value"></span>
+											</div>
+											<div class="row">
+												<strong class="field">Year of issuee:</strong>
+												<span class="value"></span>
+											</div>
+											<div class="row">
+												<strong class="field">Lifetime:</strong>
+												<span class="value"></span>
+											</div>
+											<div class="row">
+												<strong class="field">Type:</strong>
+												<span class="value"></span>
+											</div>
+											<div class="row">
+												<strong class="field">Options:</strong>
+												<ul class="options-value">
+													<li>
+														<span>Temperature inside</span>
+														<input type="text" placeholder="Enter value" />
+														<span class="value"></span>
+													</li>
+													<li>
+														<span>Temperature outside</span>
+														<input type="text" placeholder="Enter value" />
+														<span class="value"></span>
+													</li>
+													<li>
+														<span>Time of working</span>
+														<input type="text" placeholder="Enter value" />
+														<span class="value"></span>
+													</li>
+													<li>
+														<span>Delayed start of operation</span>
+														<input type="text" placeholder="Enter value" />
+														<span class="value"></span>
+													</li>
+													<li>
+														<span>The time off</span>
+														<input type="text"  placeholder="Enter value" />
+														<span class="value"></span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="btn success">Apply</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
